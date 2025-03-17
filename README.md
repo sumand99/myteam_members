@@ -64,8 +64,8 @@ bash
 Copy code
 python -m venv venv
 source venv/bin/activate  # For macOS/Linux
-# or, on Windows:
-.\venv\Scripts\activate
+.\venv\Scripts\activate    # or, on Windows:
+
 
 
 **3. Install requirements:**
