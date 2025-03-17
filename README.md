@@ -118,23 +118,7 @@ Note: Adjust the paths above if your configuration differs.
 **Project Structure**
 A simplified view (yours may differ):
 
-bash
-Copy code
-team_member_django/
-├── manage.py
-├── requirements.txt       # If using one
-├── myproject/
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-└── team/
-    ├── __init__.py
-    ├── models.py          # TeamMember model
-    ├── serializers.py     # DRF serializers
-    ├── views.py           # API views
-    ├── urls.py            # App-level routing
-    └── migrations/
+![Screenshot 2025-03-17 at 4 16 24 PM](https://github.com/user-attachments/assets/12652ddb-12b0-4499-b3c3-0b71c2a670dc)
 
     
 **Customization**
