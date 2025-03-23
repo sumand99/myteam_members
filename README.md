@@ -108,15 +108,8 @@ Run python manage.py migrate again to create the schema in the new database.
 
 ## API Endpoints
 If your urls.py is set up for team_members, you can expect endpoints like:
+<img width="825" alt="Screenshot 2025-03-23 at 1 17 30 AM" src="https://github.com/user-attachments/assets/efa41ea1-b164-481f-89b6-92362c5b15e9" />
 
-Method	Endpoint	Description
-GET	/api/team_members/	List all team members
-POST	/api/team_members/	Create a new team member
-GET	/api/team_members/<id>/	Retrieve a single team member
-PUT	/api/team_members/<id>/	Update a single team member
-PATCH	/api/team_members/<id>/	Partially update a single team member
-DELETE	/api/team_members/<id>/	Delete a single team member
-Note: Adjust the paths above if your configuration differs.
 
 
 ## Project Structure 
