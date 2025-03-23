@@ -105,11 +105,6 @@ PATCH	/api/team_members/<id>/	Partially update a single team member
 DELETE	/api/team_members/<id>/	Delete a single team member
 Note: Adjust the paths above if your configuration differs.
 
-**Project Structure**
-A simplified view (yours may differ):
-
-![Screenshot 2025-03-17 at 4 16 24 PM](https://github.com/user-attachments/assets/12652ddb-12b0-4499-b3c3-0b71c2a670dc)
-
     
 **Customization**
 Settings: Update settings.py for different databases, debugging flags, allowed hosts, etc.
