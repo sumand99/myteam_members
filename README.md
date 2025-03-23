@@ -12,12 +12,11 @@ This is the **Django** + **Django Rest Framework** back-end component for a **Te
 3. [Prerequisites](#prerequisites)
 4. [Local Setup](#localsetup)
 5. [Database and Migrations](#database-and-migrations)
-6. [Running the Server](#running-the-server)
-7. [API Endpoints](#api-endpoints)
-8. [Project Structure](#project-structure)
-9. [Customization](#customization)
-10. [Contributing](#contributing)
-11. [License](#license)
+6. [API Endpoints](#api-endpoints)
+7. [Project Structure](#project-structure)
+8. [Customization](#customization)
+9. [Contributing](#contributing)
+10. [License](#license)
 
 ---
 
@@ -42,10 +41,6 @@ It’s designed to work with a front-end (for example, a React SPA) to display a
 - **SQLite** by default (easy setup), but can be switched to other databases
 
 ---
-Project Structure- 
-
-
-<img width="386" alt="Screenshot 2025-03-23 at 12 57 55 AM" src="https://github.com/user-attachments/assets/9e504452-d2da-40bb-9aac-5bb52c81d943" />
 
 
 ## Prerequisites
@@ -92,7 +87,7 @@ It should show something like below -
 
 <img width="900" alt="Screenshot 2025-03-23 at 12 58 47 AM" src="https://github.com/user-attachments/assets/1fd0b730-1427-4588-a43f-be68084cf0a6" />
 
-6. **Database and Migrations**
+## Database and Migrations
 By default, this project uses SQLite (stored locally in the project folder). To change databases (e.g., PostgreSQL, MySQL, etc.):
 
 Update myproject/settings.py in the DATABASES section:
@@ -123,6 +118,11 @@ PUT	/api/team_members/<id>/	Update a single team member
 PATCH	/api/team_members/<id>/	Partially update a single team member
 DELETE	/api/team_members/<id>/	Delete a single team member
 Note: Adjust the paths above if your configuration differs.
+
+
+## Project Structure 
+
+<img width="386" alt="Screenshot 2025-03-23 at 12 57 55 AM" src="https://github.com/user-attachments/assets/9e504452-d2da-40bb-9aac-5bb52c81d943" />
 
     
 8. **Customization**
