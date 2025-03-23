@@ -10,7 +10,7 @@ This is the **Django** + **Django Rest Framework** back-end component for a **Te
 1. [Overview](#overview)
 2. [Key Features](#key-features)
 3. [Prerequisites](#prerequisites)
-4. [Installation](#installation)
+4. [Local Setup](#localsetup)
 5. [Database and Migrations](#database-and-migrations)
 6. [Running the Server](#running-the-server)
 7. [API Endpoints](#api-endpoints)
@@ -92,8 +92,27 @@ It should show something like below -
 
 <img width="900" alt="Screenshot 2025-03-23 at 12 58 47 AM" src="https://github.com/user-attachments/assets/1fd0b730-1427-4588-a43f-be68084cf0a6" />
 
+6. **Database and Migrations**
+By default, this project uses SQLite (stored locally in the project folder). To change databases (e.g., PostgreSQL, MySQL, etc.):
 
-**API Endpoints**
+Update myproject/settings.py in the DATABASES section:
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'mydbname',
+        'USER': 'mydbuser',
+        'PASSWORD': 'secretpassword',
+        'HOST': 'localhost',
+        'PORT': 5432,
+    }
+}
+Install the appropriate driver (e.g., psycopg2 for PostgreSQL).
+Run python manage.py migrate again to create the schema in the new database.
+
+
+
+7. **API Endpoints**
 If your urls.py is set up for team_members, you can expect endpoints like:
 
 Method	Endpoint	Description
@@ -106,13 +125,13 @@ DELETE	/api/team_members/<id>/	Delete a single team member
 Note: Adjust the paths above if your configuration differs.
 
     
-**Customization**
+8. **Customization**
 Settings: Update settings.py for different databases, debugging flags, allowed hosts, etc.
 CORS: If your front end is on a different origin (like http://localhost:3000), consider installing django-cors-headers to handle cross-origin requests.
 Authentication: If needed, integrate Django’s auth system or DRF’s token-based authentication.
 
 
-**Contributing**
+9. **Contributing**
 Fork this repository.
 Create a feature branch: git checkout -b feature/my-new-feature.
 Commit your changes: git commit -m 'Add new feature'.
@@ -120,6 +139,6 @@ Push the branch: git push origin feature/my-new-feature.
 Open a Pull Request on GitHub.
 
 
-**License**
+10. **License**
 This project is available under the MIT License. See the LICENSE file for details or choose a different license as needed.
  
