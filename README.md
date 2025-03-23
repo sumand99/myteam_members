@@ -69,54 +69,46 @@ myteam_members/
 
 ---
 
-## Installation
+## Local Setup
 
-1. **Clone** this repository:
-   ```bash
-   git clone https://github.com/<your-username>/myteam_members.git
+Follow these steps to **run the project locally** on your machine.
+
+1. **Clone the repository**
+   git clone https://github.com/sumand99/myteam_members.git
    cd myteam_members
 
 
-2. (Optional) Create a virtual environment:
+2. **Create a virtual environment (optional, but recommended)**:
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate  # For macOS/Linux
-.\venv\Scripts\activate    # or, on Windows:
+python3.13 -m venv venv
+source venv/bin/activate  # On macOS/Linux
 
+# or on Windows:
+.\venv\Scripts\activate
 
-
-**3. Install requirements:**
-bash
-Copy code
+3. **Install dependencies**:
 pip install -r requirements.txt
-Or, if you don’t have a requirements.txt, manually install Django + DRF:
 
-bash
-Copy code
+If the project doesn’t have a requirements.txt, run:
+
 pip install django djangorestframework
+pip freeze > requirements.txt
 
-
-
-
-**Database and Migrations**
-By default, this project uses SQLite (local file-based database). To create the necessary tables:
-
-bash
-Copy code
+4. **Apply Migrations**:
 python manage.py makemigrations
 python manage.py migrate
-If you change the database engine (e.g., PostgreSQL, MySQL), update the DATABASES setting in settings.py accordingly.
 
-**Running the Server**
-bash
-Copy code
-python manage.py runserver
-Django will start on http://127.0.0.1:8000 by default. You should see output like:
+5. **Run the Development Server**:
+python manage.py runserver 127.0.0.1:8000
 
-pgsql
-Copy code
+It should show something like below - 
+(venv) Sumans-MacBook-Pro-2:myteam_members sdutta$ python manage.py runserver 127.0.0.1:8000
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 17, 2025 - 22:54:49
+Django version 5.1.7, using settings 'myteam_members.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 
