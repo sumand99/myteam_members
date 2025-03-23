@@ -45,21 +45,7 @@ It’s designed to work with a front-end (for example, a React SPA) to display a
 Project Structure- 
 
 
-myteam_members/ 
-├── manage.py 
-├── myproject/ 
-│   ├── **init**.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
-├── team/
-│   ├── **init**.py
-│   ├── models.py
-│   ├── serializers.py
-│   ├── views.py
-│   ├── urls.py
-│   └── migrations/
-└── requirements.txt
+<img width="386" alt="Screenshot 2025-03-23 at 12 57 55 AM" src="https://github.com/user-attachments/assets/9e504452-d2da-40bb-9aac-5bb52c81d943" />
 
 
 ## Prerequisites
@@ -83,8 +69,8 @@ Follow these steps to **run the project locally** on your machine.
 python3.13 -m venv venv
 source venv/bin/activate  # On macOS/Linux
 
-# or on Windows:
-.\venv\Scripts\activate
+
+.\venv\Scripts\activate  #or on Windows
 
 3. **Install dependencies**:
 pip install -r requirements.txt
@@ -101,16 +87,10 @@ python manage.py migrate
 5. **Run the Development Server**:
 python manage.py runserver 127.0.0.1:8000
 
-It should show something like below - 
-(venv) Sumans-MacBook-Pro-2:myteam_members sdutta$ python manage.py runserver 127.0.0.1:8000
-Watching for file changes with StatReloader
-Performing system checks...
 
-System check identified no issues (0 silenced).
-March 17, 2025 - 22:54:49
-Django version 5.1.7, using settings 'myteam_members.settings'
-Starting development server at http://127.0.0.1:8000/
-Quit the server with CONTROL-C.
+It should show something like below - 
+
+<img width="900" alt="Screenshot 2025-03-23 at 12 58 47 AM" src="https://github.com/user-attachments/assets/1fd0b730-1427-4588-a43f-be68084cf0a6" />
 
 
 **API Endpoints**
