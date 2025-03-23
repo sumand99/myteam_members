@@ -106,8 +106,7 @@ Install the appropriate driver (e.g., psycopg2 for PostgreSQL).
 Run python manage.py migrate again to create the schema in the new database.
 
 
-
-7. **API Endpoints**
+## API Endpoints
 If your urls.py is set up for team_members, you can expect endpoints like:
 
 Method	Endpoint	Description
