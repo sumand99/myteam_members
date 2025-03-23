@@ -117,13 +117,13 @@ If your urls.py is set up for team_members, you can expect endpoints like:
 <img width="386" alt="Screenshot 2025-03-23 at 12 57 55 AM" src="https://github.com/user-attachments/assets/9e504452-d2da-40bb-9aac-5bb52c81d943" />
 
     
-8. **Customization**
+## Customization
 Settings: Update settings.py for different databases, debugging flags, allowed hosts, etc.
 CORS: If your front end is on a different origin (like http://localhost:3000), consider installing django-cors-headers to handle cross-origin requests.
 Authentication: If needed, integrate Django’s auth system or DRF’s token-based authentication.
 
 
-9. **Contributing**
+## Contributing
 Fork this repository.
 Create a feature branch: git checkout -b feature/my-new-feature.
 Commit your changes: git commit -m 'Add new feature'.
@@ -131,6 +131,6 @@ Push the branch: git push origin feature/my-new-feature.
 Open a Pull Request on GitHub.
 
 
-10. **License**
+## License
 This project is available under the MIT License. See the LICENSE file for details or choose a different license as needed.
  
