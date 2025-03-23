@@ -42,6 +42,25 @@ It’s designed to work with a front-end (for example, a React SPA) to display a
 - **SQLite** by default (easy setup), but can be switched to other databases
 
 ---
+Project Structure- 
+
+
+myteam_members/ 
+├── manage.py 
+├── myproject/ 
+│   ├── **init**.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── team/
+│   ├── **init**.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   └── migrations/
+└── requirements.txt
+
 
 ## Prerequisites
 
@@ -54,8 +73,8 @@ It’s designed to work with a front-end (for example, a React SPA) to display a
 
 1. **Clone** this repository:
    ```bash
-   git clone https://github.com/<your-username>/team_member_django.git
-   cd team_member_django
+   git clone https://github.com/<your-username>/myteam_members.git
+   cd myteam_members
 
 
 2. (Optional) Create a virtual environment:
